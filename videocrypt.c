@@ -62,25 +62,25 @@
 const static _vc_mode_t _vc1_modes[] = {
 	{ "free",        VC_CW_STATIC,  VC_FREE,       _fa_blocks,        NULL, 1, 0,      "",                        0x00, 0x20 },
 	{ "ppv",         VC_CW_DYNAMIC, VC_PPV,        _ppv_blocks,       NULL, 1, 0,      "",                        0x00, 0x20 },
-	{ "jstv",        VC_CW_DYNAMIC, VC_JSTV,       _vc1_blocks,       NULL, 2, 0,      "   HACKTV    JSTV  MODE", 0x00, 0x20 },
-	{ "sky04",       VC_CW_STATIC,  VC_SKY04,      _sky04_blocks,     NULL, 2, 0,      "   HACKTV    SKY04 MODE", 0x00, 0x12 },
-	{ "sky05",       VC_CW_DYNAMIC, VC_SKY05,      _vc1_blocks,       NULL, 2, 0,      "   HACKTV    SKY05 MODE", 0x00, 0x1B },
-	{ "sky07",       VC_CW_DYNAMIC, VC_SKY07,      _vc1_blocks,       NULL, 2, VC_EMM, "   HACKTV    SKY07 MODE", 0x0C, 0x40 },
-	{ "sky09",       VC_CW_DYNAMIC, VC_SKY09,      _vc1_blocks,       NULL, 2, VC_EMM, "   HACKTV    SKY09 MODE", 0x0C, 0x43 },
-	{ "sky09nano",   VC_CW_DYNAMIC, VC_SKY09_NANO, _vc1_blocks,       NULL, 2, VC_EMM, "   SKY 09    NANO  MODE", 0x0C, 0x43 },
-	{ "sky10",       VC_CW_STATIC,  VC_SKY10,      _sky10_blocks,     NULL, 2, 0,      "   HACKTV    SKY10 MODE", 0x00, 0x20 },
-	{ "sky10ppv",    VC_CW_STATIC,  VC_SKY10_PPV,  _sky10ppv_blocks,  NULL, 2, 0,      "HACKTV SKY10  PPV MODE ", 0x00, 0x20 },
-	{ "sky11",       VC_CW_STATIC,  VC_SKY11,      _sky11_blocks,     NULL, 2, 0,      "   HACKTV    SKY11 MODE", 0x00, 0x00 },
-	{ "sky12",       VC_CW_STATIC,  VC_SKY12,      _sky12_blocks,     NULL, 2, 0,      "   HACKTV    SKY12 MODE", 0x00, 0x00 },
-	{ "tac1",        VC_CW_DYNAMIC, VC_TAC1,       _vc1_blocks,       NULL, 2, VC_EMM, "   HACKTV    TAC1  MODE", 0x00, 0x29 },
-	{ "tac2",        VC_CW_DYNAMIC, VC_TAC2,       _vc1_blocks,       NULL, 2, VC_EMM, "   HACKTV    TAC2  MODE", 0x00, 0x49 },
-	{ "xtea",        VC_CW_DYNAMIC, VC_XTEA,       _xtea_blocks,      NULL, 2, 0,      "   HACKTV    XTEA  MODE", 0x00, 0x20 },
+	{ "jstv",        VC_CW_DYNAMIC, VC_JSTV,       _vc1_blocks,       NULL, 2, 0,      "   MPB ONE    NATIONAL ", 0x00, 0x20 },
+	{ "sky04",       VC_CW_STATIC,  VC_SKY04,      _sky04_blocks,     NULL, 2, 0,      "   MPB ONE    NATIONAL ", 0x00, 0x12 },
+	{ "sky05",       VC_CW_DYNAMIC, VC_SKY05,      _vc1_blocks,       NULL, 2, 0,      "   MPB ONE    NATIONAL ", 0x00, 0x1B },
+	{ "sky07",       VC_CW_DYNAMIC, VC_SKY07,      _vc1_blocks,       NULL, 2, VC_EMM, "   MPB ONE    NATIONAL ", 0x0C, 0x40 },
+	{ "sky09",       VC_CW_DYNAMIC, VC_SKY09,      _vc1_blocks,       NULL, 2, VC_EMM, "   MPB ONE    NATIONAL ", 0x0C, 0x43 },
+	{ "sky09nano",   VC_CW_DYNAMIC, VC_SKY09_NANO, _vc1_blocks,       NULL, 2, VC_EMM, "   MPB ONE    NATIONAL ", 0x0C, 0x43 },
+	{ "sky10",       VC_CW_STATIC,  VC_SKY10,      _sky10_blocks,     NULL, 2, 0,      "   MPB ONE    NATIONAL ", 0x00, 0x20 },
+	{ "sky10ppv",    VC_CW_STATIC,  VC_SKY10_PPV,  _sky10ppv_blocks,  NULL, 2, 0,      "   MPB ONE    PPV MODE ", 0x00, 0x20 },
+	{ "sky11",       VC_CW_STATIC,  VC_SKY11,      _sky11_blocks,     NULL, 2, 0,      "   MPB ONE    NATIONAL ", 0x00, 0x00 },
+	{ "sky12",       VC_CW_STATIC,  VC_SKY12,      _sky12_blocks,     NULL, 2, 0,      "   MPB ONE    NATIONAL ", 0x00, 0x00 },
+	{ "tac1",        VC_CW_DYNAMIC, VC_TAC1,       _vc1_blocks,       NULL, 2, VC_EMM, "   MPB ONE    NATIONAL ", 0x00, 0x29 },
+	{ "tac2",        VC_CW_DYNAMIC, VC_TAC2,       _vc1_blocks,       NULL, 2, VC_EMM, "   MPB ONE    NATIONAL", 0x00, 0x49 },
+	{ "xtea",        VC_CW_DYNAMIC, VC_XTEA,       _xtea_blocks,      NULL, 2, 0,      "   MPB ONE    NATIONAL ", 0x00, 0x20 },
 	{ NULL }
 };
 
 const static _vc_mode_t _vc2_modes[] = {
 	{ "free",        VC_CW_STATIC,  VC_FREE,  NULL, _fa2_blocks, 1, 0,      "",            0x00, 0x52 },
-	{ "conditional", VC_CW_DYNAMIC, VC_MC,    NULL, _vc2_blocks, 2, VC_EMM, "MULTICHOICE", 0x80, 0x52 },
+	{ "conditional", VC_CW_DYNAMIC, VC_MC,    NULL, _vc2_blocks, 2, VC_EMM, "MPB1 NORTHW", 0x80, 0x52 },
 	{ NULL }
 };
 
