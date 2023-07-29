@@ -1493,7 +1493,7 @@ int av_ffmpeg_open(vid_t *s, char *input_url, char *format, char *options)
 		asprintf(&_afilter_args, "time_base=%d/%d:sample_rate=%d:sample_fmt=%s:channel_layout=0x%" PRIx64,
 			av->audio_codec_ctx->time_base.num, av->audio_codec_ctx->time_base.den, av->audio_codec_ctx->sample_rate,
 			av_get_sample_fmt_name(av->audio_codec_ctx->sample_fmt),
-			av->audio_codec_ctx->channel_layout.u.mask);
+			av->audio_codec_ctx->ch_layout.u.mask);
 	
 		if(avfilter_graph_create_filter(&av->abuffersrc_ctx, abuffersrc, "in", _afilter_args, NULL, afilter_graph) < 0) 
 		{
