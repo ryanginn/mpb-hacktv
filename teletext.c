@@ -253,7 +253,7 @@ static void _packet830(uint8_t line[45], time_t timestamp)
 	line[24] = 0x00;
 	
 	/* Status Display */
-	_paritycpy(&line[25], "hacktv", 20, ' ');
+	_paritycpy(&line[25], "MPB1", 20, ' ');
 }
 
 static void _header(uint8_t line[45], int magazine, int page, int subcode, int status, char *data)
@@ -441,7 +441,7 @@ static char *_mk_header(char *s, uint16_t page, time_t timestamp)
 	/* TODO: Make this customisable */
 	
 	tm = localtime(&timestamp);
-	snprintf(temp, 33, "hacktv   %03X %%a %%d %%b\x03" "%%H:%%M/%%S", page);
+	snprintf(temp, 33, "MPB 1   %03X %%a %%d %%b\x03" "%%H:%%M/%%S", page);
 	strftime(s, 33, temp, tm);
 	
 	return(s);
